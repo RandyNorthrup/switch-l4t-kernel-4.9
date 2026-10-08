@@ -44,7 +44,7 @@
 #include "xhci.h"
 #include "../core/hub.h"
 
-static bool en_hcd_reinit = false;
+static bool en_hcd_reinit = true;
 module_param(en_hcd_reinit, bool, 0644);
 MODULE_PARM_DESC(en_hcd_reinit, "Enable hcd reinit when hc died");
 static void xhci_reinit_work(struct work_struct *work);
